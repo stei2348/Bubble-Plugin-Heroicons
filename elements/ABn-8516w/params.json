@@ -2,10 +2,9 @@
     "add_is_visible": true,
     "category": "visual elements",
     "default_dim": {
-        "height": 200,
-        "width": 400
+        "height": 20,
+        "width": 20
     },
-    "display": "c",
-    "icon": "ion-android-checkbox-blank",
-    "platform_type": "web"
+    "display": "PDF Don't Split Group 🛡️",
+    "icon": "ion-close-circled"
 }
