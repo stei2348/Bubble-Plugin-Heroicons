@@ -1,11 +1,16 @@
 {
     "add_is_visible": true,
+    "can_fit_width": true,
     "category": "visual elements",
     "default_dim": {
-        "height": 200,
-        "width": 400
+        "height": 2,
+        "width": 10
     },
-    "display": "d",
-    "icon": "ion-android-checkbox-blank",
-    "platform_type": "web"
+    "display": "PDF Page Break ✂️",
+    "icon": "ion-ios-minus-empty",
+    "platform_type": "web",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    }
 }
