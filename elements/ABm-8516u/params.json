@@ -2,10 +2,17 @@
     "add_is_visible": true,
     "category": "visual elements",
     "default_dim": {
-        "height": 200,
-        "width": 400
+        "height": 20,
+        "width": 20
     },
-    "display": "b",
-    "icon": "ion-android-checkbox-blank",
-    "platform_type": "web"
+    "display": "PDF Header ⬆️",
+    "fields": {
+        "AAs": {
+            "caption": "Place this element inside a group to make that group a header, shown in every page of the app. If you use *page-num* in a text inside the group, this will be printed as the page number in the PDF.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        }
+    },
+    "icon": "ion-arrow-up-c"
 }
