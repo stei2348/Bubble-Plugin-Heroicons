@@ -1,0 +1,219 @@
+{
+    "caption": "Generate PDF",
+    "doc": "Generates a high-fidelity PDF from a Bubble page using Magic PDF engine. Requires API Key configured in Plugin Settings.",
+    "fields": {
+        "_SECTION_CONTENT": {
+            "caption": "--- 3. CONTENT & QUALITY ---",
+            "editor": "Label",
+            "name": "info3",
+            "rank": 9
+        },
+        "_SECTION_CORE": {
+            "caption": "--- 1. CORE CONFIGURATION ---",
+            "editor": "Label",
+            "name": "info1",
+            "rank": 0
+        },
+        "_SECTION_MARGINS": {
+            "caption": "--- 4. MARGINS & LAYOUT ---",
+            "editor": "Label",
+            "name": "info4",
+            "rank": 15
+        },
+        "_SECTION_OUTPUT": {
+            "caption": "--- 5. OUTPUT & PRIVACY ---",
+            "editor": "Label",
+            "name": "info5",
+            "rank": 22
+        },
+        "_SECTION_SETTINGS": {
+            "caption": "--- 2. PDF SETTINGS ---",
+            "editor": "Label",
+            "name": "info2",
+            "rank": 4
+        },
+        "attach_to": {
+            "caption": "Attach To (Make Private)",
+            "doc": "OPTIONAL. Provide a Thing's Unique ID to attach the file to it. This makes the file PRIVATE according to your Bubble Privacy Rules.",
+            "editor": "DynamicValue",
+            "name": "attach_to",
+            "optional": true,
+            "rank": 25,
+            "value": "text"
+        },
+        "custom_height": {
+            "caption": "Custom Height (px)",
+            "doc": "Overrides standard format.",
+            "editor": "DynamicValue",
+            "name": "custom_height",
+            "optional": true,
+            "rank": 8,
+            "value": "number"
+        },
+        "custom_width": {
+            "caption": "Custom Width (px)",
+            "doc": "Overrides standard format. Useful for receipts or custom tickets.",
+            "editor": "DynamicValue",
+            "name": "custom_width",
+            "optional": true,
+            "rank": 7,
+            "value": "number"
+        },
+        "download_file": {
+            "caption": "Download File Automatically",
+            "default_val": false,
+            "doc": "If true, the browser will attempt to download the file immediately after generation.",
+            "editor": "DynamicValue",
+            "name": "download_file",
+            "rank": 24,
+            "value": "boolean"
+        },
+        "file_name": {
+            "caption": "File Name",
+            "default_val": "document.pdf",
+            "doc": "The name of the generated file (e.g. 'Invoice_100.pdf').",
+            "editor": "DynamicValue",
+            "name": "file_name",
+            "rank": 23,
+            "value": "text"
+        },
+        "format": {
+            "caption": "Page Format",
+            "default_val": "A4",
+            "doc": "Standard paper size. If Custom Width/Height are set, this is ignored.",
+            "editor": "Dropdown",
+            "name": "format",
+            "options": "A0,A1,A2,A3,A4,A5,A6,Letter,Legal,Tabloid",
+            "rank": 5
+        },
+        "hide_header_footer_first_page": {
+            "caption": "Hide Header/Footer on First Page",
+            "default_val": false,
+            "doc": "Hides the repeating header/footer elements on page 1 only.",
+            "editor": "DynamicValue",
+            "name": "hide_header_footer_first_page",
+            "rank": 21,
+            "value": "boolean"
+        },
+        "magic_link": {
+            "caption": "Magic Link (Auth)",
+            "doc": "OPTIONAL. If the page is private/protected, provide a 'Magic Link' here to allow the PDF engine to log in as a specific user.",
+            "editor": "DynamicValue",
+            "name": "magic_link",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "margin_bottom": {
+            "caption": "Margin Bottom (px)",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_bottom",
+            "rank": 18,
+            "value": "number"
+        },
+        "margin_left": {
+            "caption": "Margin Left (px)",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_left",
+            "rank": 19,
+            "value": "number"
+        },
+        "margin_right": {
+            "caption": "Margin Right (px)",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_right",
+            "rank": 17,
+            "value": "number"
+        },
+        "margin_top": {
+            "caption": "Margin Top (px)",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_top",
+            "rank": 16,
+            "value": "number"
+        },
+        "no_margins_first_page": {
+            "caption": "No Margins on First Page",
+            "default_val": false,
+            "doc": "Useful for full-page cover images.",
+            "editor": "DynamicValue",
+            "name": "no_margins_first_page",
+            "rank": 20,
+            "value": "boolean"
+        },
+        "orientation": {
+            "caption": "Orientation",
+            "default_val": "Portrait",
+            "doc": "Portrait (Vertical) or Landscape (Horizontal).",
+            "editor": "Dropdown",
+            "name": "orientation",
+            "options": "Portrait,Landscape",
+            "rank": 6
+        },
+        "p1": {
+            "caption": "URL Parameter 1",
+            "doc": "Sent to the page URL as p1",
+            "editor": "DynamicValue",
+            "name": "p1",
+            "optional": true,
+            "rank": 12,
+            "value": "text"
+        },
+        "p2": {
+            "caption": "URL Parameter 2",
+            "doc": "Sent to the page URL as p2",
+            "editor": "DynamicValue",
+            "name": "p2",
+            "optional": true,
+            "rank": 13,
+            "value": "text"
+        },
+        "p3": {
+            "caption": "URL Parameter 3",
+            "doc": "Sent to the page URL as p3",
+            "editor": "DynamicValue",
+            "name": "p3",
+            "optional": true,
+            "rank": 14,
+            "value": "text"
+        },
+        "page_name": {
+            "caption": "Page Name",
+            "doc": "REQUIRED. The name of the Bubble page to convert (e.g., 'invoice_preview'). Do not include the domain. If the page expects a specific data type (Type of content), append its Unique ID after a slash (e.g., 'invoice_preview/123456x123456').",
+            "editor": "DynamicValue",
+            "name": "page_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "quality": {
+            "caption": "Quality / Compression",
+            "default_val": 1,
+            "doc": "Default: 1. Values > 1 increase quality (HD). Values < 1 (e.g. 0.8) compress images to reduce file size.",
+            "editor": "DynamicValue",
+            "name": "quality",
+            "rank": 10,
+            "value": "number"
+        },
+        "timezone": {
+            "caption": "Timezone",
+            "doc": "Leave EMPTY to auto-detect user's timezone. Or specify a city (e.g. 'Europe/Rome') or offset (e.g. '+0200').",
+            "editor": "DynamicValue",
+            "name": "timezone",
+            "optional": true,
+            "rank": 11,
+            "value": "text"
+        },
+        "website_home_url": {
+            "caption": "Website Home URL",
+            "doc": "REQUIRED. Use the dynamic expression 'Website home URL'. This tells the engine where your app lives.",
+            "editor": "DynamicValue",
+            "name": "website_home_url",
+            "rank": 1,
+            "value": "text"
+        }
+    }
+}
