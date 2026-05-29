@@ -1,0 +1,11 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "b",
+    "icon": "ion-android-checkbox-blank",
+    "platform_type": "web"
+}
