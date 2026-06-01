@@ -8,6 +8,8 @@ function(instance, context) {
     const _p1 = "aHR0cHM6Ly9ybHpkdHB2cTNqbzZ6Zmd1emJmNXRtY3NybTB4cnNweC5";
     const _p2 = "sYW1iZGEtdXJsLmV1LW5vcnRoLTEub24uYXdzLw==";
     const GET_LAMBDA = () => { try { return atob(_p1 + _p2); } catch(e) { return ""; } };
+    
+    instance.data.GET_LAMBDA = GET_LAMBDA;
 
     instance.data.logHistory = "";
     const addLog = (message) => {
@@ -16,6 +18,7 @@ function(instance, context) {
         instance.data.logHistory += `[${timestamp}] ${message}\n`;
         instance.publishState('logs', instance.data.logHistory);
     };
+    
 
     // --- 3. DEFINIZIONE FUNZIONE PRINCIPALE ---
     instance.data.generatePDF = (properties) => {

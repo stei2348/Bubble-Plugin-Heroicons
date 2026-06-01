@@ -61,7 +61,7 @@
         },
         "download_file": {
             "caption": "Download File Automatically",
-            "default_val": false,
+            "default_val": true,
             "doc": "If true, the browser will attempt to download the file immediately after generation.",
             "editor": "DynamicValue",
             "name": "download_file",
