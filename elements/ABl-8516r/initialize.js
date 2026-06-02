@@ -27,9 +27,8 @@ function(instance, context) {
                  pluginElement.style.display = 'none';
             }
             
-            console.log("PDF Plugin: Header Group agganciato correttamente", targetGroup);
         } else {
-            console.warn("PDF Plugin: ATTENZIONE - Nessun Gruppo padre trovato per l'Header.");
+            
         }
     }, 1000);
 }

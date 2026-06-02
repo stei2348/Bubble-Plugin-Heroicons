@@ -14,9 +14,7 @@ function(instance, context) {
             // Nascondiamo il quadratino del plugin per pulizia
             pluginElement.style.display = 'none';
             
-            console.log("PDF Plugin: No Split Group agganciato", targetGroup);
         } else {
-            console.warn("PDF Plugin: Parent Group per No-Split non trovato.");
         }
     }, 1000);
 }
